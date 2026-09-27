@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Instrument_Serif, Inter } from 'next/font/google'
+import { ServiceWorker } from '@/components/service-worker'
 import { TabBar } from '@/components/tab-bar'
 import './globals.css'
 
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           {children}
         </main>
         <TabBar />
+        <ServiceWorker />
       </body>
     </html>
   )
