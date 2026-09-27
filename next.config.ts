@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  // The floating dev badge sits on top of the bottom tab bar.
+  devIndicators: false,
+}
 
-export default nextConfig;
+export default nextConfig
